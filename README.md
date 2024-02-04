@@ -65,7 +65,7 @@ sudo apt install google-chrome-stable -y
 * 매도 가능 확인 요청
 ![image](https://github.com/Developerinsight/Forex_Chatbot/assets/123748877/f50a4596-bf91-427e-b91c-75954aaef709)
 
-* 최신 주요 뉴스 요청
+* 최신 주요 뉴스 요청   
 ![image](https://github.com/Developerinsight/Forex_Chatbot/assets/123748877/370c5cde-ef40-4be1-9c8b-aa70eaa6ef1c)
 
 
