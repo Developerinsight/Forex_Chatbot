@@ -69,3 +69,15 @@ sudo apt install google-chrome-stable -y
 ![image](https://github.com/Developerinsight/Forex_Chatbot/assets/123748877/370c5cde-ef40-4be1-9c8b-aa70eaa6ef1c)
 
 
+## 6. 매매 결정 조건문
+```
+ if ex_1 < ex_1y and index_1 < index_1y and (index_1/ex_1*100) > (index_1y/ex_1y*100) and ex_1 < (index_1 /(index_1y/ex_1y*100))*100:
+        return "Buy it now!"
+        
+    else:
+        return "Wait!"
+```
+* ex_1 < ex_1y: 현재 환율(ex_1)이 지난 1년 평균 환율(ex_1y)보다 낮은지를 확인. 이는 현재 환율이 상대적으로 유리하다고 판단할 수 있는 조건   
+* index_1 < index_1y: 현재 지수(index_1)가 지난 1년 평균 지수(index_1y)보다 낮은지 확인. 이는 현재 시장 가치가 과거 평균보다 낮게 평가되었음을 나타냄   
+* (index_1/ex_1*100) > (index_1y/ex_1y*100): 현재 지수 대 환율의 비율이 지난 1년 평균 지수 대 환율의 비율보다 높은지 확인. 이 비율이 높다는 것은 투자 가치가 환율 변동을 고려했을 때 상대적으로 더 높음을 의미.   
+* ex_1 < (index_1 /(index_1y/ex_1y*100))*100: 현재 환율이 지난 1년 동안의 지수 대 환율 비율을 현재 지수에 적용했을 때의 계산값보다 낮은지 확인. 이는 현재 환율이 지난 1년 동안의 평균 시장 성과 대비 환율에 비해 유리한 조건인지를 평가하는 방식
